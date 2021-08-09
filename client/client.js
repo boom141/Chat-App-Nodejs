@@ -1,5 +1,5 @@
 //Establishing a connection with the server on port 5500y
-const socket = io('http://localhost:3000');
+const socket = io();
 //Client sends a message at the moment it got connected with the server
 socket.emit('clientToServer', "Hello, server!");
 
