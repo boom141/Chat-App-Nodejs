@@ -10,6 +10,8 @@ const port = process.env.PORT || 3000;
 const server = app.listen(port);
 const io = require('socket.io')(server);
 
+app.use(express.static('client'));
+
 io.on('connection', (socket) => {
     console.log('a user connected');
       socket.emit('serverToClient', "Server: Hello, client!");
