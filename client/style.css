@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(211, 208, 208, 0.342);
+}
+.TextArea{
+    height: 51px;
+    width: 300px;
+    margin-top: 10%;
+    border: 5px solid black;
+    border-radius: 5%;
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    background-repeat: no-repeat;
+    background-size: 100% 50px;
+    overflow: hidden;
+    transition: ease ease-in;
+    animation: boom 2s 1s 1 linear normal;
+}
+
+.TextArea{
+   font-family: 'Lobster', cursive;
+   font-size: 30px;
+   padding-left: 90px;
+   padding-top: 5px;
+}
+
+#Input{
+    margin-top: 152%;
+    margin-left: -40%;
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    border: 2px solid #8a2387;
+    border-radius: 20px;
+    height: 30px;
+    width: 225px;
+    padding-top: 3px;
+    padding-left: 10px;
+    color: black;
+    outline: none;
+}
+
+.icon{
+    margin-top: -15%;
+    margin-left: 80%;
+}
+
+.icon img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.Write{
+    margin-top: -169%;
+    margin-left: -47%;
+    height: 0px;
+    width: 300px;
+    padding-top: 8px;
+    padding-left: 8px; 
+    overflow-x: hidden;
+    overflow-y: auto;
+    animation: boom 2s 1s 1 linear normal;
+}
+
+.h1Property{
+   color: black;
+   font-size: 15px;
+   font-family: 'Oswald', sans-serif;
+}
+
+#username, .btn-user{
+    position: absolute;
+    top: 35%;
+    left: 47.5%;
+    transform: translate(-50%,-50%);
+    height: 30px;
+    width: 200px;
+    outline: none;
+    border: none;
+    background: rgba(128, 128, 128, 0.322);
+    opacity: 1;
+    transition: 0.5s ease-out;
+    
+}
+
+.btn-user{
+    left: 58%;
+    width: 60px;
+    background: #e94057;
+}
+
+@keyframes ChatAnimate{
+    0%{height: 50px;}
+    100%{height: 400px;}
+}
+
+@keyframes WriteAnimate{
+    0%{height: 0px;}
+    100%{height: 301px;}
+}
+
