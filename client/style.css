@@ -20,7 +20,6 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 50px;
     overflow: hidden;
-    transition: ease ease-in;
     animation: boom 2s 1s 1 linear normal;
 }
 
